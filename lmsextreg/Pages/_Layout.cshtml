@@ -14,7 +14,6 @@
             asp-fallback-test-class="sr-only"
             asp-fallback-test-property="position"
             asp-fallback-test-value="absolute" />
-
     <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/required-field.min.css" />
 </head>
@@ -68,18 +67,15 @@
                     <a class="nav-link" asp-page="/Index">Home<span class="sr-only">(current)</a>
                 </li>
                 <li class="nav-item">
-                    <!-- <a class="nav-link" asp-controller="Home" asp-action="About">About</a> -->
                     <a class="nav-link" asp-page="/About">About</a>
                 </li>
                 <li class="nav-item">
-                    <!-- <a class="nav-link disabled" href="#">Contact</a> -->
                     <a class="nav-link" asp-page="/Contact">Contact</a>
                 </li>
             </ul>
             @await Html.PartialAsync("_LoginPartial")
         </div>
     </nav>
-
     <div class="container body-content">
         @RenderBody()
         <hr />
