@@ -6,32 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - LMS Registration</title>
+    <link   rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+            crossorigin="anonymous"
+            asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+            asp-fallback-test-class="sr-only"
+            asp-fallback-test-property="position"
+            asp-fallback-test-value="absolute" />
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/css/required-field.css" />
-    </environment>
-    <environment exclude="Development">
-
-        <!--    
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        -->
-
-        <link   rel="stylesheet" 
-                href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-                crossorigin="anonymous"
-                asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-                asp-fallback-test-class="sr-only"
-                asp-fallback-test-property="position"
-                asp-fallback-test-value="absolute" />
-
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/css/required-field.min.css" />
-    </environment>
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/required-field.min.css" />
 </head>
 <body>
     <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -118,11 +103,25 @@
         </script>
         -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
                 asp-fallback-src="~/lib/jquery/dist/jquery.slim.min.js"
                 asp-fallback-test="window.jQuery"        
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous">
+        </script> -->
+
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+                asp-fallback-src="~/lib/jquery/dist/jquery.slim.min.js"
+                asp-fallback-test="window.jQuery"        
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+        </script>      -->
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"
+              asp-fallback-src="~/lib/jquery/dist/jquery.min.js">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
                 integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
