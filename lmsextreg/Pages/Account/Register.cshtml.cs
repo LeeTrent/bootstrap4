@@ -115,10 +115,10 @@ namespace lmsextreg.Pages.Account
             SubAgencySelectList = new SelectList(_dbContext.SubAgencies.OrderBy(sa => sa.DisplayOrder), "SubAgencyID", "SubAgencyName");
             
             var recaptchaKey = _configuration[MiscConstants.GOOGLE_RECAPTCHA_KEY];
-            Console.WriteLine("recaptchaKey: " + recaptchaKey);
+            //Console.WriteLine("recaptchaKey: " + recaptchaKey);
             
             var recaptchaSecret = _configuration[MiscConstants.GOOGLE_RECAPTCHA_SECRET];
-            Console.WriteLine("recaptchaSecret: " + recaptchaSecret);              
+            //Console.WriteLine("recaptchaSecret: " + recaptchaSecret);              
 
             ViewData["ReCaptchaKey"] = _configuration[MiscConstants.GOOGLE_RECAPTCHA_KEY];            
          
