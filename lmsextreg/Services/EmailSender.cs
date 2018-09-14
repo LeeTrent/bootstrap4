@@ -61,8 +61,7 @@ namespace lmsextreg.Services
         public Task ExecuteUsingSendGrid(string apiKey, string subject, string message, string email)
         {
             Console.WriteLine("[EmailSender][ExecuteUsingSendGrid]:" );
-            _logger.LogInformation("[EmailSender][ExecuteUsingSendGrid]");
-            _logger.LogInformation("apiKey: '" + apiKey + "'");
+            Console.WriteLine("apiKey: '" + apiKey + "'");
 
             var client = new SendGridClient(apiKey);
             var msg = new SendGridMessage()
