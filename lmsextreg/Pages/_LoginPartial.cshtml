@@ -11,15 +11,16 @@
 
             @if ((await AuthorizationService.AuthorizeAsync(User, "CanAccessProfileLink")).Succeeded)
             {
-                <li>
-                    <a asp-page="/Account/Manage/Index" title="UserName">@UserManager.GetUserName(User)</a>
+                <li class="nav-item">
+                    <a class="nav-link" asp-page="/Account/Manage/Index" title="UserName">@UserManager.GetUserName(User)</a>
                 </li>
-                <li>
-                    <a asp-page="/Account/Manage/Index" title="Manage">My Profile</a>
+                <li class="nav-item">
+                    <a class="nav-link" asp-page="/Account/Manage/Index" title="Manage">My Profile</a>
                 </li>
             }    
-            <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
+
+            <li class="nav-item">
+                <button type="submit" class="btn btn-link navbar-btn nav-link">Log out</button>
             </li>
         </ul>
     </form>

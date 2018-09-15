@@ -96,6 +96,17 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-page="/Index">Home</a>
                     </li>
+
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "CanAccessStudentLink")).Succeeded)
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-page="/Enrollments/Index">My Programs</a></li>
+                    }    
+                  
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "CanAccessApproverLink")).Succeeded)
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-page="/Approvals/Index">Enrollments</a></li>
+                    }   
+
                     <li class="nav-item">
                         <a class="nav-link" asp-page="/About">About</a>
                     </li>
