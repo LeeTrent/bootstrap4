@@ -1,3 +1,7 @@
+* {
+    font-size: 14px;
+ }
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -9,6 +13,13 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+h2, .h2 { font-size: 30px; }
+h4, .h4 { font-size: 18px; }
+li {font-size: 14px;} 
+label {font-weight:bold;}
+
+.detailsDT {text-align:right;}
 
 /* Carousel */
 .carousel-caption p {

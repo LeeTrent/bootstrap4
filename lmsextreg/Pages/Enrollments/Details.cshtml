@@ -8,37 +8,37 @@
 <h4>Enrollment Application Details</h4>
  <hr />
 <div>
-    <dl class="dl-horizontal">
-        <dt>Applicant's Name:</dt>
-        <dd>
+    <dl class="row">
+        <dt class="col-sm-2 detailsDT">Applicant's Name:</dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.Student.FullName)
         </dd>
-        <dt>Email Address:</dt>
-        <dd>
+        <dt class="col-sm-2 detailsDT">Email Address:</dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.Student.UserName)
         </dd>
-        <dt>Agency:</dt>   
-        <dd>
+        <dt class="col-sm-2 detailsDT">Agency:</dt>   
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.Student.Agency.AgencyName)
         </dd>    
-        <dt>Sub-Agency:</dt>   
-        <dd>
+        <dt class="col-sm-2 detailsDT">Sub-Agency:</dt>   
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.Student.SubAgency.SubAgencyName)
         </dd>     
-        <dt>Job Title:</dt>   
-        <dd>
+        <dt class="col-sm-2 detailsDT">Job Title:</dt>   
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.Student.JobTitle)
         </dd>  
-        <dt>Program Name:</dt>  
-        <dd>
+        <dt class="col-sm-2 detailsDT">Program Name:</dt>  
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ProgramEnrollment.LMSProgram.LongName)
         </dd>
-        <dt>Enrollment Status:</dt>   
-        <dd>
+        <dt class="col-sm-2 detailsDT">Enrollment Status:</dt>   
+        <dd class="col-sm-10">
             <span style="border: 2px solid red;font-weight:bold;">@Html.DisplayFor(model => model.ProgramEnrollment.EnrollmentStatus.StatusLabel)</span>
         </dd>     
-        <dt>Enrollment History:</dt>   
-        <dd>
+        <dt class="col-sm-2 detailsDT">Enrollment History:</dt>   
+        <dd class="col-sm-10">
             <table class="table table-bordered table-striped table-sm" style="width=50%;">
                 <thead>
                     <tr style="color:#FFF;background-color:#A9A9A9">
