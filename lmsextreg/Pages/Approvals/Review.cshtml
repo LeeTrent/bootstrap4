@@ -67,7 +67,7 @@
 {
     <form method="post">
         <input type="hidden" name="id" value="@Model.ProgramEnrollment.ProgramEnrollmentID" />
-       <div style="width:40%">
+       <div style="width:40%"   >
              <div class="form-group">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <label asp-for="Input.Remarks"></label>:
@@ -76,15 +76,15 @@
             <div class="form-group">
                 @if ( @Model.ShowApproveButton )
                 {
-                    <input type="submit" class="btn btn-xs btn-success" style="margin-top: 10px;" asp-page-handler="Approve" value="Approve" />
+                    <input type="submit" class="btn btn-xs btn-success" style="margin-top:0px;" asp-page-handler="Approve" value="Approve" />
                 }
                 @if ( @Model.ShowDenyButton )
                 {
-                    <input type="submit" class="btn btn-xs btn-danger" style="margin-top: 10px;" asp-page-handler="Deny" value="Deny" />
+                    <input type="submit" class="btn btn-xs btn-danger" style="margin-top:0px;" asp-page-handler="Deny" value="Deny" />
                 }
                 @if ( @Model.ShowRevokeButton )
                 {
-                    <input type="submit" class="btn btn-xs btn-danger" style="margin-top: 10px;" asp-page-handler="Revoke" value="Revoke" />
+                    <input type="submit" class="btn btn-xs btn-danger" style="margin-top:0px;" asp-page-handler="Revoke" value="Revoke" />
                 }
             </div>
        </div>  
